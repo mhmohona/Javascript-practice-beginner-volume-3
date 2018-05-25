@@ -6,7 +6,7 @@
 -Outcome
 */
 var outcome;
-windos.alert("One day you wake up and the world as you know has ended. The dead come to life and prey on the living. There is no hope, no cure, only survival. Welcome to the zombie apocalyps. ");
+window.alert("One day you wake up and the world as you know has ended. The dead come to life and prey on the living. There is no hope, no cure, only survival. Welcome to the zombie apocalyps. ");
 var beginningSenarios = ["You wake up in a hospital. It is early quiet. Ypu tiptoe to the door and peek out.", "You are standing in an open field west of a white house hith a boarded front door. There is a small mailbox here", "Desperate thimes call for desperate measures. You see a small convenience store up sheed and decide to loot it for goods."];
 
 function randomNumber(range) {
@@ -34,11 +34,11 @@ if(!character.name){
     }
 }
 
-if (charecter.charecterClass == "soldier")
+if (character.charecterClass == "soldier")
     character.stealth= 5;
-if (charecter.charecterClass == "politician")
+if (character.charecterClass == "politician")
     character.stealth= 5;
-if (charecter.charecterClass == "doctor")
+if (character.charecterClass == "doctor")
     character.stealth= 7;
 
 var choice = window.prompt("The brave adventurer and former "+ character.charecterClass + " " +character.name + " enters a store for same loot. You notice a zombie slowly shuffling around amougst the destruction, What actioon shall you take? Attack ot attempt to sneak by the zombie? ").toLowerCase();
